@@ -77,3 +77,11 @@ body {
     border-bottom: 0;
   }
 }
+
+
+/* Custom styles */
+
+#schedule td:first-child {
+  text-align: right;
+  font-style: italic;
+}

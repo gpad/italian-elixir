@@ -9,7 +9,7 @@
     <meta name="author" content="gpad">
     <link rel="icon" href="assets/images/favicon.ico">
 
-    <title>Italian elixir</title>
+    <title>Italian Elixir</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -35,8 +35,9 @@
         <nav>
           <ul class="nav nav-pills pull-right">
             <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#schedule">About</a></li>
-            <li role="presentation"><a href="#slack">Contact</a></li>
+            <li role="presentation"><a href="#schedule">Schedule</a></li>
+            <li role="presentation"><a href="#speakers">Speakers</a></li>
+            <li role="presentation"><a href="#contact">Contacts</a></li>
           </ul>
         </nav>
         <h3 class="text-muted">Italian Elixir</h3>
@@ -53,118 +54,194 @@
 
       <div id="schedule" class="row marketing">
         <div class="col-lg-12">
-          <h3>Programma</h3>
+          <h3>Schedule</h3>
           <ul>
-            <li>9.30  - 9.45   - Registrazione</li>
-            <li>9.45  - 10.15  - Keynote (<a href="#gpadovani">Gianluca Padovani</a> & <a href="#pdincau">Paolo D'Incau</a>)</li>
-            <li>10.15 - 11.00  - <a href="#introelixir">Introduction to Elixir</a> (<a href="#aleopardi">Andrea Leopardi</a>) </li>
-            <li>11.00 - 11.30  - Break</li>
-            <li>11.30 - 12.15  - <a href="#exploringotp">Exploring Processes and OTP behaviours in Erlang</a> (<a href="#pdincau">Paolo D'Incau</a>)</li>
-            <li>12.30 - 13.15  - <a href="#phoenix">Phoenix per principianti</a> (<a href="#pmontrasio">Paolo Montrasio</a>)</li>
-            <li>Break for Lunch <a class="tooltip-right" href="#schedule" title="Il pranzo è a carico dei partecipanti">(*)</a></li>
-            <li>14.30 - 15.15  - <a href="#potions">Il mio primo giorno di pozioni</a> (<a href="#gpadovani">Gianluca Padovani</a>)</li>
-            <li>15.15 - 16.00  - <a href="#parse">Parse Everything with Elixir</a> (<a href="#glana">Gabriele Lana</a>)</li>
-            <li>16.00 - 16.30  - Break</li>
-            <li>16.30 - 17.15  - <a href="#ecompiler">The Elixir compiler is as cool as Elixir itself</a> (<a href="#aleopardi">Andrea Leopardi</a>)</li>
-            <li>17.15 - 18.00  - <a href="#gol">The game of Life</a> (<a href="#glana">Gabriele Lana</a>)</li>
-            <li>18.00 - 18.30  - Panel Finale e Saluti!!!</li>
+            <table id="schedule" class="table">
+              <tr>
+                <td>9:30  - 9:45</td>
+                <td>Registrazione</td>
+              </tr>
+              <tr>
+                <td>9:45  - 10:15</td>
+                <td>Keynote (<a href="#gpadovani">Gianluca Padovani</a> & <a href="#pdincau">Paolo D'Incau</a>)</td>
+              </tr>
+              <tr>
+                <td>10:15 - 11:00</td>
+                <td><a href="#introelixir">Introduction to Elixir</a> (<a href="#aleopardi">Andrea Leopardi</a>)</td>
+              </tr>
+              <tr>
+                <td>11:00 - 11:30</td>
+                <td>Break</td>
+              </tr>
+              <tr>
+                <td>11:30 - 12:15</td>
+                <td><a href="#exploringotp">Exploring processes and OTP behaviours in Erlang</a> (<a href="#pdincau">Paolo D'Incau</a>)</td>
+              </tr>
+              <tr>
+                <td>12:30 - 13:15</td>
+                <td><a href="#phoenix">Phoenix per principianti</a> (<a href="#pmontrasio">Paolo Montrasio</a>)</td>
+              </tr>
+              <tr>
+                <td>13:15 - 14:30</td>
+                <td>Lunch <a class="tooltip-right" href="#schedule" title="Il pranzo è a carico dei partecipanti">(*)</a></td>
+              </tr>
+              <tr>
+                <td>14:30 - 15:15</td>
+                <td><a href="#potions">Il mio primo giorno di pozioni</a> (<a href="#gpadovani">Gianluca Padovani</a>)</td>
+              </tr>
+              <tr>
+                <td>15:15 - 16:00</td>
+                <td><a href="#parse">Parse everything with Elixir</a> (<a href="#glana">Gabriele Lana</a>)</td>
+              </tr>
+              <tr>
+                <td>16:00 - 16:30</td>
+                <td>Break</td>
+              </tr>
+              <tr>
+                <td>16:30 - 17:15</td>
+                <td><a href="#ecompiler">Elixir's compiler is as cool as Elixir itself</a> (<a href="#aleopardi">Andrea Leopardi</a>)</td>
+              </tr>
+              <tr>
+                <td>17:15 - 18:00</td>
+                <td><a href="#gol">The game of life</a> (<a href="#glana">Gabriele Lana</a>)</td>
+              </tr>
+              <tr>
+                <td>18:00 - 18:30</td>
+                <td>Panel finale e saluti!</td>
+              </tr>
+            </table>
           </ul>
         </div>
       </div>
 
       <div id="talks" class="row marketing">
         <div class="col-lg-12">
-          <h3>Speakers</h3>
-          <h4 id="introelixir">Introduction to Elixir</h4>
-          <p>Una introduzione ad Elixir,un nuovo ed eccitante  linguaggio di programmazione,
-            un linguaggio basato sulla Erlang VM che compila in Erlang bytecode.
-            In questa presentazione mostreremo le più potenti features di Elixir, il suo
-            supporto alla concorrenza e il suo fantastico sistema di macro rimanendo comunque una
-            semplice introduzione.</p>
+          <h3>Talks</h3>
 
-          <h4 id="exploringotp">Exploring Processes and OTP behaviours in Erlang</h4>
-          <p>Quando si inizia con Erlang ci si fa spaventare dalla sua sintassi,
-	    dimenticandosi dei vantaggi ottenibili abbracciando il suo actor model.
-	    In questa presentazione introdurremo i processi Erlang, le primitive
-	    messe a disposizione dal linguaggio per gestirli e parlemo dei più
-	    comuni OTP behaviours vedendone alcuni casi d'uso. </p>
+          <h4 id="introelixir">Introduction to Elixir</h4>
+          <p>
+            Una introduzione ad Elixir, un nuovo ed eccitante linguaggio di
+            programmazione basato sulla Erlang VM e che compila in bytecode
+            Erlang.  In questa presentazione mostreremo le features più potenti
+            di Elixir, il suo supporto alla concorrenza e il suo fantastico
+            sistema di macro. La presentazione sarà per principianti.
+          </p>
+
+          <h4 id="exploringotp">Exploring processes and OTP behaviours in Erlang</h4>
+          <p>
+            Quando si inizia con Erlang ci si fa spaventare dalla sua sintassi,
+            dimenticandosi dei vantaggi ottenibili abbracciando il suo actor
+            model. In questa presentazione introdurremo i processi Erlang, le
+            primitive messe a disposizione dal linguaggio per gestirli, e parleremo
+            dei più comuni OTP behaviours vedendone alcuni casi d'uso.
+          </p>
 
           <h4 id="phoenix">Phoenix per principianti</h4>
-          <p>Phoenix è un framework web MVC per Elixir ispirato a Ruby on Rails.
+          <p>
+            Phoenix è un framework web MVC per Elixir ispirato a Ruby on Rails.
             Si mostrerà come creare un'applicazione da zero, la sua struttura
             generale e si daranno esempi tratti dal porting di un'applicazione
-            Rails. Verranno dimostrati i collegamenti al database e la generazione
-            di view HTML e JSON.</p>
+            Rails. Verranno dimostrati i collegamenti al database e la
+            generazione di view HTML e JSON.
+          </p>
 
           <h4 id="potions">Il mio primo giorno di pozioni</h4>
-          <p>In questo talk farò vedere il primo approccio ad elixir in un semplice
-            caso reale. Vedremo cosa significa sviluppare un piccolo servizio in
-            elixir e quanto l'ecosistema sia pronto per andare in produzione.</p>
+          <p>
+            In questo talk farò vedere il primo approccio ad Elixir in un
+            semplice caso reale. Vedremo cosa significa sviluppare un piccolo
+            servizio in Elixir e quanto l'ecosistema sia pronto per andare in
+            produzione.
+          </p>
 
           <h4 id="parse">Parse Everything with Elixir</h4>
-          <p>Scrivere un parser può essere un’attività formativa e divertente
-            sopratutto se non stai lavorando sotto pressione e se non è importare
-            che funzioni veramente :-) Durante il talk parleremo di parser
-            combinator, ovvero una tecnica che consente di scrivere parser in
-            maniera comprensibile, veloce ed incrementale. Faremo tanti esempi
-            pratici supportati da un po’ di teoria, costruiremo parser sempre più
-            complessi usando Paco, una libreria scritta in Elixir.</p>
+          <p>
+            Scrivere un parser può essere un’attività formativa e divertente
+            sopratutto se non stai lavorando sotto pressione e se non è
+            importare che funzioni veramente :-). Durante il talk parleremo di
+            parser combinator, ovvero una tecnica che consente di scrivere
+            parser in maniera comprensibile, veloce ed incrementale. Faremo
+            tanti esempi pratici supportati da un po’ di teoria, costruiremo
+            parser sempre più complessi usando Paco, una libreria scritta in
+            Elixir.
+          </p>
 
           <h4 id="ecompiler">The Elixir compiler is as cool as Elixir itself</h4>
-          <p>In questo talk andremo ad esplorare come funziona la compilazione in
-            Elixir e tutte le cose che si possono fare durante questa fase. Andremo
-            a studiare le macro (che sono gestite dal compilatore) e come possiamo
-            trarne vantaggio.</p>
+          <p>
+            In questo talk andremo ad esplorare come funziona la compilazione in
+            Elixir e tutte le cose che si possono fare durante questa
+            fase. Andremo a studiare le macro (che sono gestite dal compilatore)
+            e come possiamo sfruttarle al meglio.
+          </p>
 
           <h4 id="gol">The game of Life</h4>
-          <p>In questo talk farò un walkthrough di una soluzione del
+          <p>
+            In questo talk farò un walkthrough di una soluzione del
             <a href="https://en.wikipedia.org/wiki/Conway's_Game_of_Life">game of life</a>.
-            La soluzione proposta sfrutta i processi della VM di erlang e affronta
-            il problema con un approccio tipico di erlang.</p>
-
+            La soluzione proposta sfrutta i processi della VM di Erlang e affronta
+            il problema con un approccio tipico di Erlang.
+          </p>
         </div>
       </div>
 
       <div id="speakers" class="row marketing">
         <div class="col-lg-12">
           <h3>Speakers</h3>
+
           <h4 id="pdincau">Paolo D'Incau</h4>
-          <p>Ho una doppia identità: programmatore OOP di giorno, diffondo FP la
-            notte (e i weekend). Mi sono innamorato di Erlang e della sua comunità
-            nel 2009 e da allora non riesco a starne senza. Sogno un mondo dove
-            per programmare in funzionale non si debba lasciare l'Italia o farsi
-            crescere una barba.</p>
+          <p>
+            Ho una doppia identità: programmatore OOP di giorno, diffondo FP la
+            notte (e i weekend). Mi sono innamorato di Erlang e della sua
+            comunità nel 2009 e da allora non riesco a starne senza. Sogno un
+            mondo dove per programmare in funzionale non si debba lasciare
+            l'Italia o farsi crescere una barba.
+          </p>
 
           <h4 id="glana">Gabriele Lana</h4>
-          <p>Programmatore di professione. Discepolo del buon codice.
-            Elixir/Erlang, Elm, Ruby e Rust sono i linguaggi di programmazione che
-            mi piacciono. Faccio questo lavoro da 17 anni e lo amo come il primo
-            giorno.</p>
+          <p>
+            Programmatore di professione. Discepolo del buon codice.
+            Elixir/Erlang, Elm, Ruby e Rust sono i linguaggi di programmazione
+            che mi piacciono. Faccio questo lavoro da 17 anni e lo amo come il
+            primo giorno.
+          </p>
 
           <h4 id="aleopardi">Andrea Leopardi</h4>
-          <p>Sono un entusiasta dei linguaggi con un ossessione per il codice
-           bello e pulito. Amo imparare nuove tecnologie come early adopter.
-           Credo fortemente nell'accesso alla cultura, educazione e nel
-           software libero.</p>
+          <p>
+            Sono un appassionato di linguaggi di programmazione con un
+            ossessione per il codice bello e pulito. Amo imparare nuove
+            tecnologie ed essere un early adopter. Credo fortemente nell'accesso
+            alla cultura e all'educazione e nel software libero.
+          </p>
 
           <h4 id="pmontrasio">Paolo Montrasio</h4>
-          <p>Ho sviluppato software fin dagli anni '80 e sono stato analista e
-            project manager dalla metà degli anni '90 utilizzando
-             molte tecnologie (C, Perl, HTML/CSS, Java, JavaScript, Ruby on Rails).
-             Alterno progetti di sviluppo software con altri in cui progetto
-             applicazioni e coordino il lavoro degli sviluppatori. Sto iniziando
-             ad usare Elixir e Phoenix. Titolare di
-             <a href="http://connettiva.eu" target="_blank">connettiva.eu</a></p>
+          <p>
+            Ho sviluppato software fin dagli anni '80 e sono stato analista e
+            project manager dalla metà degli anni '90 utilizzando molte
+            tecnologie (C, Perl, HTML/CSS, Java, JavaScript, Ruby on Rails).
+            Alterno progetti di sviluppo software con altri in cui progetto
+            applicazioni e coordino il lavoro degli sviluppatori. Sto iniziando
+            ad usare Elixir e Phoenix. Titolare di
+            <a href="http://connettiva.eu" target="_blank">connettiva.eu</a>.
+          </p>
 
           <h4 id="gpadovani">Gianluca Padovani</h4>
-          <p>Ho oltre 20 anni di esperienza nello sviluppo di software in vari
+          <p>
+            Ho oltre 20 anni di esperienza nello sviluppo di software in vari
             ambienti (embedded, industriale ed entertainment). Ho sviluppato diversi
             tipi di software lavorando sia da solo che in team. Dal 2005 mi sono
             innamorato delle metodologie agili diventando addicted di TDD. Da
             qualche anno credo fortemente nei linguaggi funzionali in particolare
-            in erlang ed elixir. Sono Founder & CTO di
-            <a href="http://coders51.com/"  target="_blank">coders51</a></p>
+            in Erlang ed Elixir. Sono Founder & CTO di
+            <a href="http://coders51.com/" target="_blank">coders51</a>.
+          </p>
+        </div>
+      </div>
 
+      <div id="contact" class="row marketing">
+        <div class="col-lg-12">
+          <h3>Contacts</h3>
+          <p>
+            Per qualsiasi informazione, scrivi a <a href="mailto:info@coders51.com">info@coders51.com</a>.
+          </p>
         </div>
       </div>
 
