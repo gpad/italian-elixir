@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="This site is dedicated to elixir/erlang language in italy">
+    <meta name="author" content="gpad">
+    <link rel="icon" href="assets/images/favicon.ico">
+
+    <title>Italian Elixir</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#schedule">Schedule</a></li>
+            <li role="presentation"><a href="#speakers">Speakers</a></li>
+            <li role="presentation"><a href="#contact">Contacts</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Italian Elixir</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h4><a id="logo-container" href="index.html" class="brand-logo">vai all'evento più recente: <img src="assets/img/italian-elixir.png"></a></h4>
+      </div>
+      <div class="jumbotron">
+        <h1>Italian Elixir</h1>
+        <p class="lead">Questo è il gruppo italiano dedicato ad Elixir ed Erlang.</p>
+
+        <p class="lead">Iscriviti al nostro Slack<div><script async defer src="http://beam-italia.herokuapp.com/slackin.js" ></script></div></p>
+
+        <p class="lead">Guarda i video e le slide del nostro <br><a href="#schedule">meetup a Bologna il 17 ottobre 2015</a>.</p>
+        <!-- <p class="lead">Sotto trovi i video e le slides degli interventi</p> -->
+        <!-- <p class="lead">Sei interessato a discutere sullo slack ...</p>
+        <p><a class="btn btn-lg btn-success" href="#slack" role="button">Entra in slack</a></p> -->
+      </div>
+
+      <div class="row marketing">
+        Stiamo organizzando un incontro mensile via hangout. Sei interessato?
+        Partecipa al <a href="http://doodle.com/poll/acwys3ni652qa3uk">poll</a>.
+        Ma soprattutto non dimenticare di iscriverti al nostro <script async defer src="http://beam-italia.herokuapp.com/slackin.js" ></script>
+      </div>
+
+      <div class="row marketing">
+        <p>
+          Sai che in Elixir c'è uno style nello scrivere codice? Questi sono un
+          paio di esempi che puoi trovare, simili e secondo noi da seguire:
+        </p>
+        <ul>
+          <il><a href="https://github.com/niftyn8/elixir_style_guide">Elixir Styel guide</a>
+            Questo, come dice anche la descrizione, dovrebbe essere un style comunity driven</il>
+          <il><a href="https://github.com/lexmag/elixir-style-guide">Elixir Style guide</a>
+            Questo è tenuto da <a href="https://github.com/lexmag">Aleksei Magusev</a> un core member di Elixir.
+          </li>
+        </ul>
+
+        <p>
+          Sei in cerca di librerie che ti possano aiutar nello svilupo? Il posto
+          da vui partire è questo <a href="https://hex.pm/">hex.pm</a>. Se poi vuoi
+          qualche informazione in più puoi andare qui: <a href="http://toolbox.elixir.pm/">http://toolbox.elixir.pm/</a>
+        </p>
+      </div>
+
+      <div id="schedule" class="row marketing">
+        Questo è il programma del nostro ultimo meetup che abbiamo tenuto a
+        Bologna, sotto puoi trovare gli abstract, i video e le slides delle
+        varie peresentazioni.
+        <div class="col-lg-12">
+          <h3>Schedule</h3>
+          <ul>
+            <table id="schedule" class="table">
+              <tr>
+                <td>9:30  - 9:45</td>
+                <td>Registrazione</td>
+              </tr>
+              <tr>
+                <td>9:45  - 10:15</td>
+                <td>Keynote (<a href="#gpadovani">Gianluca Padovani</a> & <a href="#pdincau">Paolo D'Incau</a>) (<a href="http://www.slideshare.net/gpadovani/keynote-meetup-elixirerlang-17-ottobre-2015" target="_blank">slides</a> <a href="https://vimeo.com/143097699" target="_blank">video</a>)</td>
+              </tr>
+              <tr>
+                <td>10:15 - 11:00</td>
+                <td><a href="#introelixir">Introduction to Elixir</a> (<a href="#aleopardi">Andrea Leopardi</a>) (<a href="https://speakerdeck.com/whatyouhide/introduction-to-elixir" target="_blank">slides</a> <a href="https://vimeo.com/143097717" target="_blank">video</a>)</td>
+              </tr>
+              <tr>
+                <td>11:00 - 11:30</td>
+                <td>Break</td>
+              </tr>
+              <tr>
+                <td>11:30 - 12:15</td>
+                <td><a href="#exploringotp">Exploring processes and OTP behaviours in Erlang</a> (<a href="#pdincau">Paolo D'Incau</a>) (<a href="https://speakerdeck.com/pdincau/exploring-processes-and-otp-behaviours-in-erlang" target="_blank">slides</a> <a href="https://vimeo.com/143681426" target="_blank">video</a>)</td>
+              </tr>
+              <tr>
+                <td>12:30 - 13:15</td>
+                <td><a href="#phoenix">Phoenix per principianti</a> (<a href="#pmontrasio">Paolo Montrasio</a>) (<a href="slides/17-oct-meetup/Montrasio-Phoenix-per-principianti-ridotta.pdf" target="_blank">slides</a> <a href="https://vimeo.com/143916757" target="_blank">video</a>)</td>
+              </tr>
+              <tr>
+                <td>13:15 - 14:30</td>
+                <td>Lunch <a class="tooltip-right" href="#schedule" title="Il pranzo è a carico dei partecipanti">(*)</a></td>
+              </tr>
+              <tr>
+                <td>14:30 - 15:15</td>
+                <td><a href="#potions">La mia prima lezione di pozioni</a> (<a href="#gpadovani">Gianluca Padovani</a>) (<a href="http://www.slideshare.net/gpadovani/la-mia-prima-lezione-di-pozioni" target="_blank">slides</a> <a href="https://vimeo.com/144057331" target="_blank">video</a>)</td>
+              </tr>
+              <tr>
+                <td>15:15 - 16:00</td>
+                <td><a href="#parse">Parse everything with Elixir</a> (<a href="#glana">Gabriele Lana</a>) (<a href="http://www.slideshare.net/gabriele.lana/parse-everything-with-elixir" target="_blank">slides</a> <a href="https://vimeo.com/144242377" target="_blank">video</a>)</td>
+              </tr>
+              <tr>
+                <td>16:00 - 16:30</td>
+                <td>Break</td>
+              </tr>
+              <tr>
+                <td>16:30 - 17:15</td>
+                <td><a href="#ecompiler">Elixir's compiler is as cool as Elixir itself</a> (<a href="#aleopardi">Andrea Leopardi</a>) (<a href="https://vimeo.com/144242384" target="_blank">video</a>)</td>
+              </tr>
+              <tr>
+                <td>17:15 - 18:00</td>
+                <td><a href="#gol">The game of life</a> (<a href="#glana">Gabriele Lana</a>) (<a href="https://www.evernote.com/l/ANpHuVDAlL9Kd5ovEeJQaObQusJdP4g4FCE" target="_blank">slides</a> <a href="https://vimeo.com/144242392" target="_blank">video</a>)</td>
+              </tr>
+              <tr>
+                <td>18:00 - 18:30</td>
+                <td>Panel finale e saluti!</td>
+              </tr>
+            </table>
+          </ul>
+        </div>
+      </div>
+
+      <div id="talks" class="row marketing">
+        <div class="col-lg-12">
+          <h3>Talks</h3>
+
+          <h4 id="introelixir">Introduction to Elixir - <a href="https://speakerdeck.com/whatyouhide/introduction-to-elixir" target="_blank">slides</a> <a href="https://vimeo.com/143097717" target="_blank">video</a></h4>
+          <p>
+            Una introduzione ad Elixir, un nuovo ed eccitante linguaggio di
+            programmazione basato sulla Erlang VM e che compila in bytecode
+            Erlang.  In questa presentazione mostreremo le features più potenti
+            di Elixir, il suo supporto alla concorrenza e il suo fantastico
+            sistema di macro. La presentazione sarà per principianti.
+          </p>
+
+          <h4 id="exploringotp">Exploring processes and OTP behaviours in Erlang - <a href="https://speakerdeck.com/pdincau/exploring-processes-and-otp-behaviours-in-erlang" target="_blank">slides</a> <a href="https://vimeo.com/143681426" target="_blank">video</a></h4>
+          <p>
+            Quando si inizia con Erlang ci si fa spaventare dalla sua sintassi,
+            dimenticandosi dei vantaggi ottenibili abbracciando il suo actor
+            model. In questa presentazione introdurremo i processi Erlang, le
+            primitive messe a disposizione dal linguaggio per gestirli, e parleremo
+            dei più comuni OTP behaviours vedendone alcuni casi d'uso.
+          </p>
+
+          <h4 id="phoenix">Phoenix per principianti - <a href="slides/17-oct-meetup/Montrasio-Phoenix-per-principianti-ridotta.pdf" target="_blank">slides</a> <a href="https://vimeo.com/143916757" target="_blank">video</a></h4>
+          <p>
+            Phoenix è un framework web MVC per Elixir ispirato a Ruby on Rails.
+            Si mostrerà come creare un'applicazione da zero, la sua struttura
+            generale e si daranno esempi tratti dal porting di un'applicazione
+            Rails. Verranno dimostrati i collegamenti al database e la
+            generazione di view HTML e JSON.
+          </p>
+
+          <h4 id="potions">La mia prima lezione di pozioni - <a href="http://www.slideshare.net/gpadovani/la-mia-prima-lezione-di-pozioni" target="_blank">slides</a> <a href="https://vimeo.com/144057331" target="_blank">video</a></h4>
+          <p>
+            In questo talk farò vedere il primo approccio ad Elixir in un
+            semplice caso reale. Vedremo cosa significa sviluppare un piccolo
+            servizio in Elixir e quanto l'ecosistema sia pronto per andare in
+            produzione.
+          </p>
+
+          <h4 id="parse">Parse Everything with Elixir - <a href="http://www.slideshare.net/gabriele.lana/parse-everything-with-elixir" target="_blank">slides</a> <a href="https://vimeo.com/144242377" target="_blank">video</a></h4>
+          <p>
+            Scrivere un parser può essere un’attività formativa e divertente
+            sopratutto se non stai lavorando sotto pressione e se non è
+            importare che funzioni veramente :-). Durante il talk parleremo di
+            parser combinator, ovvero una tecnica che consente di scrivere
+            parser in maniera comprensibile, veloce ed incrementale. Faremo
+            tanti esempi pratici supportati da un po’ di teoria, costruiremo
+            parser sempre più complessi usando Paco, una libreria scritta in
+            Elixir.
+          </p>
+
+          <h4 id="ecompiler">The Elixir compiler is as cool as Elixir itself - <a href="https://vimeo.com/144242384" target="_blank">video</a></h4>
+          <p>
+            In questo talk andremo ad esplorare come funziona la compilazione in
+            Elixir e tutte le cose che si possono fare durante questa
+            fase. Andremo a studiare le macro (che sono gestite dal compilatore)
+            e come possiamo sfruttarle al meglio.
+          </p>
+
+          <h4 id="gol">The game of Life - <a href="https://www.evernote.com/l/ANpHuVDAlL9Kd5ovEeJQaObQusJdP4g4FCE" target="_blank">slides</a> <a href="https://vimeo.com/144242392" target="_blank">video</a></h4>
+          <p>
+            In questo talk farò un walkthrough di una soluzione del
+            <a href="https://en.wikipedia.org/wiki/Conway's_Game_of_Life">game of life</a>.
+            La soluzione proposta sfrutta i processi della VM di Erlang e affronta
+            il problema con un approccio tipico di Erlang.
+          </p>
+        </div>
+      </div>
+
+      <div id="speakers" class="row marketing">
+        <div class="col-lg-12">
+          <h3>Speakers</h3>
+
+          <h4 id="pdincau">Paolo D'Incau</h4>
+          <p>
+            Ho una doppia identità: programmatore OOP di giorno, diffondo FP la
+            notte (e i weekend). Mi sono innamorato di Erlang e della sua
+            comunità nel 2009 e da allora non riesco a starne senza. Sogno un
+            mondo dove per programmare in funzionale non si debba lasciare
+            l'Italia o farsi crescere una barba.
+          </p>
+
+          <h4 id="glana">Gabriele Lana</h4>
+          <p>
+            Programmatore di professione. Discepolo del buon codice.
+            Elixir/Erlang, Elm, Ruby e Rust sono i linguaggi di programmazione
+            che mi piacciono. Faccio questo lavoro da 17 anni e lo amo come il
+            primo giorno.
+          </p>
+
+          <h4 id="aleopardi">Andrea Leopardi</h4>
+          <p>
+            Sono un appassionato di linguaggi di programmazione con un
+            ossessione per il codice bello e pulito. Amo imparare nuove
+            tecnologie ed essere un early adopter. Credo fortemente nell'accesso
+            alla cultura e all'educazione e nel software libero.
+          </p>
+
+          <h4 id="pmontrasio">Paolo Montrasio</h4>
+          <p>
+            Ho sviluppato software fin dagli anni '80 e sono stato analista e
+            project manager dalla metà degli anni '90 utilizzando molte
+            tecnologie (C, Perl, HTML/CSS, Java, JavaScript, Ruby on Rails).
+            Alterno progetti di sviluppo software con altri in cui progetto
+            applicazioni e coordino il lavoro degli sviluppatori. Sto iniziando
+            ad usare Elixir e Phoenix. Titolare di
+            <a href="http://connettiva.eu" target="_blank">connettiva.eu</a>.
+          </p>
+
+          <h4 id="gpadovani">Gianluca Padovani</h4>
+          <p>
+            Ho oltre 20 anni di esperienza nello sviluppo di software in vari
+            ambienti (embedded, industriale ed entertainment). Ho sviluppato diversi
+            tipi di software lavorando sia da solo che in team. Dal 2005 mi sono
+            innamorato delle metodologie agili diventando addicted di TDD. Da
+            qualche anno credo fortemente nei linguaggi funzionali in particolare
+            in Erlang ed Elixir. Sono Founder & CTO di
+            <a href="http://coders51.com/" target="_blank">coders51</a>.
+          </p>
+        </div>
+      </div>
+
+      <div id="contact" class="row marketing">
+        <div class="col-lg-12">
+          <h3>Contacts</h3>
+          <p>
+            Per qualsiasi informazione, scrivi a <a href="mailto:info@coders51.com">info@coders51.com</a>.
+          </p>
+        </div>
+      </div>
+
+      <!-- <div id="eventbrite" class="row marketing">
+        <div class="col-lg-12">
+          <h3>Registrati</h3>
+          <div style="width:100%; text-align:left;" >
+            <iframe src="http://eventbrite.it/tickets-external?eid=18440536140&ref=etckt" frameborder="0" height="260" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+            <!-- <div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" >
+              <a class="powered-by-eb" style="color: #dddddd; text-decoration: none;" target="_blank" href="http://www.eventbrite.it/r/etckt">Con tecnologia Eventbrite</a>
+            </div> -->
+          </div>
+        </div>
+      </div> -->
+
+      <footer class="footer">
+        <p>thanks to <a href="http://coders51.com" target="_blank">coders51</a></p>
+      </footer>
+
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
