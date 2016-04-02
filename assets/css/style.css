@@ -56,3 +56,23 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+.cd-timeline-img.cd-registration {
+  background: #c03b44;
+}
+
+.cd-timeline-img.cd-session {
+  background: #75ce66;
+}
+
+.cd-timeline-img.cd-lunch {
+  background: #f0ca45;
+}
+
+.cd-timeline-img.cd-hands-on {
+  background: #75ce66;
+}
+
+.cd-timeline-img.cd-last-session {
+  background: #c03b44;
+}
