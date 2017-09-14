@@ -123,7 +123,7 @@
     <div class="parallax"><img src="assets/img/background2.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
-  <div class="container">
+  <!-- <div class="container">
     <div class="section">
       <div class="row">
         <div class="col s12 center">
@@ -132,9 +132,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
-  <!-- <div class="container">
+  <div class="container">
     <div class="section">
       <div class="row">
         <div class="col s12 center">
@@ -155,11 +155,11 @@
                 <img src="assets/img/session.svg" alt="session">
               </div>
               <div class="cd-timeline-content">
-                <h2>KeyNote: Beam me up, Scotty!!!</h2>
-                <p>Elixir, Erlang, LFE, etc .. negli ultimi tempi stanno comparendo tanti bei linguaggi che compilano per la BEAM. Sembra che l'attenzione sia sui linguaggi e non sulla VM che li esegue e le librerie su cui si fondano. In questo breve talk
-                  proverò di mostrarvi perché, secondo me, il valore maggiore è nella BEAM e nella OTP.</p>
+                <h2>KeyNote: BEAM way of life</h2>
+                <p>In questo talk vederemo alcune cose che sono peculiari del mondo Erlang/Elixir. Di come fare un po' di debug di un'applicazione,
+di come fare un po' di refactoring e di come, per esempio, si possa strutturare diversamente il codice anche in situazioni apparentemente semplici</p>
                 <a href="#speakers" class="cd-read-more">Gianluca Padovani</a>
-                <span class="cd-date">9:30 - 10.00</span>
+                <span class="cd-date">9:30 - 10.15</span>
               </div>
             </div>
             <div class="cd-timeline-block">
@@ -167,13 +167,10 @@
                 <img src="assets/img/session.svg" alt="session">
               </div>
               <div class="cd-timeline-content">
-                <h2>Elixir, Phoenix e un Raspberry Pi entrano in un campo WiFi</h2>
-                <p>Inizieremo usando insieme un'applicazione Phoenix su un Raspberry Pi 3, a cui ci collegheremo per misurare la potenza del segnale WiFi tra il nostro telefono, tablet, laptop ed il Raspberry. Phoenix parla con Linux per ricavare il mac
-                  address del nostro device dato l'indirizzo IP e per misurare i decibel dei segnali scambiati. Il device riceve la misura dei decibel in tempo reale via websocket e li visualizza nel browser. Vedremo l'organizzazione dei processi che
-                  cooperano per realizzare l'applicazione e come interagire tramite port con il sistema operativo (arp e tshark).
-                </p>
+                <h2>Al lavoro con Phoenix: ricordi di un'estate</h2>
+                <p>I tre mesi di un progetto Phoenix sono stati come un viaggio. Ci sono ricordi piacevoli ed altri meno. Qual è la sensazione finale e cosa si potrebbe migliorare per dei viaggi, ehm... progetti migliori?</p>
                 <a href="#speakers" class="cd-read-more">Paolo Montrasio</a>
-                <span class="cd-date">10:00 - 10:45</span>
+                <span class="cd-date">10:15 - 10:45</span>
               </div>
             </div>
             <div class="cd-timeline-block">
@@ -190,10 +187,10 @@
                 <img src="assets/img/session.svg" alt="session">
               </div>
               <div class="cd-timeline-content">
-                <h2>Da zero ad una applicazione distribuita in Erlang. </h2>
-                <p>Le applicazioni distribuite sono uno dei punti di forza di Erlang. Nel talk partiremo dalla configurazione del tool di sviluppo fino a creare una piccola applicazione distribuita. Vedremo come scalare un cluster Erlang ed alcuni sistemi
-                  di notifica legati ai nodi. Vedremo inoltre alcune features di monitoraggio e debugging del linguaggio.</p>
-                <a href="#2" class="cd-read-more">Gabriele Santomaggio</a>
+                <h2>Detectino: un sistema d'allarme realizzato con arduino, raspberry pi ed Elixir</h2>
+                <p>Siccome i sistemi d'allarme tradizionali sono proprietari con scarse possibilità di integrazione, possiamo usare tanti strumenti open per realizzarne uno che faccia quello che davvero ci serve.
+Ho deciso di intraprendere lo studio di Elixir (e di un pò di elettronica ed altro) realizzando un impianto completo per la mia abitazione, usabile da non esperti, e vedremo cioò che ho utilizzato per arrivare alla fine, da Phoenix come API backend con Plug custom passando alla modellazione dei sensori con GenServer e :gen_statem , al Registry nonchè all'interfaccia di basso livello su un CAN bus per la comunicazione fra schede diverse, il tutto condito da una suite di test abbastanza completa</p>
+                <a href="#2" class="cd-read-more">Matteo Brancaleoni</a>
                 <span class="cd-date">11:15 - 12:00</span>
               </div>
             </div>
@@ -202,10 +199,9 @@
                 <img src="assets/img/session.svg" alt="session">
               </div>
               <div class="cd-timeline-content">
-                <h2> Oltre Phoenix il futuro</h2>
-                <p>Phoenix mi ha deluso, mi aspettavo di più, mi aspettavo molto di più, condividerò con voi le ragioni del perché la penso così, parleremo di cosa di può fare diversamente, del perché dovrebbe essere fatto e come. Il talk è lievemente provocatorio,
-                  l’intento è quello di spronare tutti a guardare oltre, ad esplorare modi più semplici ed efficienti di creare applicazioni che hanno un’interfaccia fruibile attraverso il web</p>
-                <a href="#3" class="cd-read-more">Gabriele Lana</a>
+                <h2>Creare una applicazione web distribuita in Erlang</h2>
+                <p>Nel talk parleremo del clustering, uno degli aspetti più interessanti della BEAM.Partiremo dai concetti base fino alla creazione di una vera e propria applicazione web distribuita in  Erlang</p>
+                <a href="#3" class="cd-read-more">Gabriele Santomaggio</a>
                 <span class="cd-date">12:00 - 12:45</span>
               </div>
             </div>
@@ -224,7 +220,12 @@
               </div>
               <div class="cd-timeline-content">
                 <h2>Hands on session</h2>
-                <p>DIvisione in gruppi ed esperimenti su temi proposti in giornata. I più esperti faranno da tutor gli altri saranno apprendisti stregoni.</p>
+                <p>Divisione in gruppi ed esperimenti su temi proposti in giornata.<br />
+                  I più esperti faranno da tutor e gli altri saranno apprendisti stregoni.</p>
+                <p>Hai qualche idea e vuoi una mano per svilupparla? Questo è il momento buono, il pomeriggio è tuo.</p>
+                <p>Hai qualche dubbio e vuoi esercitarti sua qualcosa in particolare? Vieni e proponilo.</p>
+                <p>Vuoi semplicemente imparare un po' di Elixir/Erlang? Faremo un groppo solo per chi parte da zero.</p>
+                <p>Vuoi venire a divertirti con un gruppo di NERD, prendi il biglietto!!!</p>
                 <span class="cd-date">14:15 - 17:15</span>
               </div>
             </div>
@@ -241,7 +242,7 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
 
   <div class="parallax-container valign-wrapper" id="speakers">
     <div class="section no-pad-bot">
@@ -254,7 +255,7 @@
     <div class="parallax"><img src="assets/img/background3.jpg" alt="Unsplashed background img 3"></div>
   </div>
 
-  <div class="container">
+  <!-- <div class="container">
     <div class="section">
       <div class="row">
         <div class="col s12 center">
@@ -263,9 +264,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
-  <!-- <div class="container">
+  <div class="container">
     <div class="section">
       <div class="row">
         <div class="col s12 center">
@@ -286,19 +287,22 @@
           applicazioni e coordino il lavoro degli sviluppatori. Sto iniziando ad usare Elixir e Phoenix. Titolare di
           <a href="http://connettiva.eu" target="_blank">connettiva.eu</a>.
         </p>
+        <h4 id="glana">Matteo Brancaleoni</h4>
+        <p>
+          Tutta colpa di mio padre. Che mi regalò un C64 nel lontano '89.
+          E non mi comprava i giochi. Da allora non mi sono staccato più dalla programmazione.
+          Sono professionista da 17 anni e son passato dallo sviluppo web al mondo VoIP, specializzandomi nel backend di applicazioni telefoniche.
+          Mi sono mosso fra Php, Perl, C, Python ed ora Elixir.
+          Adoro sviluppare soprattutto perchè si possono inventare cose nuove che ieri non pensavi possibili.
+        </p>
         <h4 id="3">Gabriele Santomaggio</h4>
         <p>
           Ho iniziato a programmare con AMIGA 500! ah i bei vecchi tempi! Ho più di 15 anni di esperienza e la mia passione sono le middleware technologies. Attualmente lavoro da remoto per Erlang-Solutions ( London ) come RabbitMQ developer and consultant. Sono
           contributor per RabbitMQ su github e stackoverflow supporter. Sono anche co-autore di "RabbitMQ Cookbook".
         </p>
-
-        <h4 id="glana">Gabriele Lana</h4>
-        <p>
-          Programmatore di professione. Discepolo del buon codice. Elixir/Erlang, Elm, Ruby e Rust sono i linguaggi di programmazione che mi piacciono. Faccio questo lavoro da 17 anni e lo amo come il primo giorno.
-        </p>
       </div>
     </div>
-  </div> -->
+  </div>
 
   <div class="parallax-container valign-wrapper" id="tickets">
     <div class="section no-pad-bot">
