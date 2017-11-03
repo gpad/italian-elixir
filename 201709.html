@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+  <title>Elixir &amp; Erlang Meetup: terzo incontro ufficiale 30 Settembre 2017</title>
+  <meta name="description" content="Dopo il successo dei primi due incontri di Ottobre 2015 e Maggio 2016,
+  ripeteremo la formula dell'ultima edizione con un'intera giornata divisa in due fasi: la mattina sessioni frontali e pomeriggio "hands-on".
+  Sarà una giornata rivolta alla community italiana, con l'obiettivo di incontrarsi, divertirsi e condividere assieme le nostre esperienze e conoscenze.
+  La giornata è aperta a chiunque, sia che tu sia un/a principiante o un/a super esperto/a, il prossimo 30 Settembre 2017, non mancare!">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Nunzio Fiore">
+  <title>Elixir &amp; Erlang Meetup: terzo incontro ufficiale 30 Settembre 2017</title>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="assets/css/timeline.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+  <meta property="og:title" content="Elixir &amp; Erlang Meetup: terzo incontro ufficiale 30 Settembre 2017">
+  <meta property="og:site_name" content="Elixir &amp; Erlang Meetup">
+  <meta property="og:url" content="http://www.italian-elixir.org">
+  <meta property="og:description" content="Dopo il successo dei primi due incontri di Ottobre 2015 e Maggio 2016,
+  ripeteremo la formula dell'ultima edizione con un'intera giornata divisa in due fasi: la mattina sessioni frontali e pomeriggio "hands-on".
+  Sarà una giornata rivolta alla community italiana, con l'obiettivo di incontrarsi, divertirsi e condividere assieme le nostre esperienze e conoscenze.
+  La giornata è aperta a chiunque, sia che tu sia un/a principiante o un/a super esperto/a, il prossimo 30 Settembre 2017, non mancare!">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="http://www.italian-elixir.org/assets/img/potions.jpg" />
+</head>
+
+<body>
+  <ul id="dropdown-past-edition-normal" class="dropdown-content">
+    <li><a href="/201605.html" target="_blank">Maggio 2016</a></li>
+    <li><a href="/201510.html" target="_blank">Ottobre 2015</a></li>
+  </ul>
+  <ul id="dropdown-past-edition-mobile" class="dropdown-content">
+    <li><a href="/201605.html" target="_blank">Maggio 2016</a></li>
+    <li><a href="/201510.html" target="_blank">Ottobre 2015</a></li>
+  </ul>
+  <div class="nav-wrapper">
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo"><img src="assets/img/italian-elixir.png" style="height:60px"></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">HOME AGGIORNATA</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#speakers">Speakers</a></li>
+          <li><a href="#tickets">Biglietti</a></li>
+          <li><a href="#location">Dove</a></li>
+          <li><a href="#contacts">Contatti</a></li>
+          <!-- Dropdown Trigger -->
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown-past-edition-normal">Edizione Passate<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#speakers">Speakers</a></li>
+          <li><a href="#tickets">Biglietti</a></li>
+          <li><a href="#location">Dove</a></li>
+          <li><a href="#contacts">Contatti</a></li>
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown-past-edition-mobile">Edizione Passate<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse purple-text"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <h1 class="header center purple-text text-lighten-2">Elixir &amp; Erlang Meetup</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Un incontro nazionale dedicato ad Elixir ed Erlang.</h5>
+          <p class="lead">Iscriviti al nostro Slack
+            <div>
+              <script async defer src="http://beam-italia.herokuapp.com/slackin.js"></script>
+            </div>
+          </p>
+          <p class="lead ">
+            Dopo il successo dei primi due incontri di Ottobre 2015 e Maggio 2016,
+            ripeteremo la formula dell'ultima edizione con un'intera giornata divisa in due fasi: la mattina sessioni frontali e pomeriggio "hands-on".
+            Sarà una giornata rivolta alla community italiana, con l'obiettivo di incontrarsi, divertirsi e condividere assieme le nostre esperienze e conoscenze.<br />
+            La giornata è aperta a chiunque, sia che tu sia un/a principiante o un/a super esperto/a, il prossimo 30 Settembre 2017, non mancare!
+          </p>
+        </div>
+        <div class="row center">
+          <a href="#tickets" id="download-button" class="btn-large waves-effect waves-light purple lighten-1" style="z-index:0">Iscriviti all'evento</a>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/img/potions.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+  <!-- <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 m6 offset-m3">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">opacity</i></h2>
+            <h5 class="center">Call For Paper</h5>
+              <p>La call for paper è aperta! Terminerà alle 24:00 del 10 Settembre 2017.</p>
+              <p>Se sei interessato/a a mandare una proposta per una sessione della mattina o se hai un'idea per un attività "hands-on" da fare
+              tutti assieme nel pomeriggio, scrivi una e-mail a: <a href="mailto:info@coders51.com">info@coders51.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div class="container">
+    <div class="section">
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m6 offset-m3">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">opacity</i></h2>
+            <h5 class="center">Basic Info</h5>
+            <p>
+              Sai che in Elixir c'è uno style nello scrivere codice? Questi sono un
+              paio di esempi che puoi trovare, simili e secondo noi da seguire:
+            </p>
+            <ul>
+              <li>
+                <a href="https://github.com/niftyn8/elixir_style_guide">Elixir Style guide</a><br />
+                Questo, come dice anche la descrizione, dovrebbe essere uno style community driven
+              </li>
+              <br />
+              <li><a href="https://github.com/lexmag/elixir-style-guide">Elixir Style guide</a><br />
+                Questo è tenuto da <a href="https://github.com/lexmag">Aleksei Magusev</a> un core member di Elixir.
+              </li>
+            </ul>
+            <p>
+              Sei in cerca di librerie che ti possano aiutare nello svilupo? Il posto
+              da cui partire è questo <a href="https://hex.pm/">hex.pm</a>. <br />
+              Se poi vuoi
+              qualche informazione in più puoi andare qui: <a href="http://toolbox.elixir.pm/">http://toolbox.elixir.pm/</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="parallax-container valign-wrapper" id="agenda">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">Impara a usare le pozioni</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/img/background2.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <!-- <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="material-icons">today</i></h3>
+          <h4>Agenda dell'incontro in arrivo...</h4>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="material-icons">today</i></h3>
+          <h4>Agenda dell'incontro</h4>
+          <section id="cd-timeline" class="cd-container">
+            <div class="cd-timeline-block">
+              <div class="cd-timeline-img cd-registration">
+                <img src="assets/img/registration.svg" alt="Picture">
+              </div>
+              <div class="cd-timeline-content">
+                <h2>Registrazione</h2>
+                <span class="cd-date">9:00 - 9:30</span>
+              </div>
+            </div>
+            <div class="cd-timeline-block">
+              <div class="cd-timeline-img cd-session">
+                <img src="assets/img/session.svg" alt="session">
+              </div>
+              <div class="cd-timeline-content">
+                <h2>KeyNote: BEAM way of life</h2>
+                <p>In questo talk vederemo alcune cose che sono peculiari del mondo Erlang/Elixir. Vedremo come fare un po' di debug di un'applicazione,
+come fare un po' di refactoring e come, per esempio, si possa strutturare diversamente il codice anche in situazioni apparentemente semplici</p>
+
+                <a href="https://github.com/gpad/bwof"  class="btn btn-info">BWOF</a>
+                <a href="https://www.slideshare.net/gpadovani/beam-way-of-life-80337975"   class="btn btn-info">SLIDES</a>
+
+                <a href="#speakers" class="cd-read-more">Gianluca Padovani</a>
+
+                <span class="cd-date">9:30 - 10.15</span>
+              </div>
+            </div>
+            <div class="cd-timeline-block">
+              <div class="cd-timeline-img cd-session">
+                <img src="assets/img/session.svg" alt="session">
+              </div>
+              <div class="cd-timeline-content">
+                <h2>Al lavoro con Phoenix: ricordi di un'estate</h2>
+                <p>I tre mesi di un progetto Phoenix sono stati come un viaggio. Ci sono ricordi piacevoli ed altri meno. Qual è la sensazione finale e cosa si potrebbe migliorare per dei viaggi, ehm... progetti migliori?</p>
+                <a href="https://connettiva.eu/al-lavoro-con-phoenix/" class="btn btn-info" >SLIDES</a>
+                <a href="#speakers" class="cd-read-more">Paolo Montrasio</a>
+
+                <span class="cd-date">10:15 - 10:45</span>
+              </div>
+            </div>
+            <div class="cd-timeline-block">
+              <div class="cd-timeline-img cd-coffe-break purple black-text">
+                <i class="material-icons coffee">pause</i>
+              </div>
+              <div class="cd-timeline-content">
+                <h2>Coffee Break</h2>
+                <span class="cd-date">10:45 - 11:15</span>
+              </div>
+            </div>
+            <div class="cd-timeline-block">
+              <div class="cd-timeline-img cd-session">
+                <img src="assets/img/session.svg" alt="session">
+              </div>
+              <div class="cd-timeline-content">
+                <h2>Detectino: un sistema d'allarme realizzato con arduino, raspberry pi ed Elixir</h2>
+                <p>Siccome i sistemi d'allarme tradizionali sono proprietari con scarse possibilità di integrazione, possiamo usare tanti strumenti open per realizzarne uno che faccia quello che davvero ci serve.
+Ho deciso di intraprendere lo studio di Elixir (e di un pò di elettronica ed altro) realizzando un impianto completo per la mia abitazione, usabile da non esperti, e vedremo cioò che ho utilizzato per arrivare alla fine, da Phoenix come API backend con Plug custom passando alla modellazione dei sensori con GenServer e :gen_statem , al Registry nonchè all'interfaccia di basso livello su un CAN bus per la comunicazione fra schede diverse, il tutto condito da una suite di test abbastanza completa</p>
+                <a href="#2" class="cd-read-more">Matteo Brancaleoni</a>
+
+                <a href="https://cloud.brancaleoni.com/index.php/s/SSoXgN8CtD0xGGz"  class="btn btn-info">SLIDES</a><br/>
+
+                <span class="cd-date">11:15 - 12:00</span>
+              </div>
+            </div>
+            <div class="cd-timeline-block">
+              <div class="cd-timeline-img cd-session">
+                <img src="assets/img/session.svg" alt="session">
+              </div>
+              <div class="cd-timeline-content">
+                <h2>Creare una applicazione web distribuita in Erlang</h2>
+                <p>Nel talk parleremo del clustering, uno degli aspetti più interessanti della BEAM.Partiremo dai concetti base fino alla creazione di una vera e propria applicazione web distribuita in  Erlang</p>
+                <a href="#3" class="cd-read-more">Gabriele Santomaggio</a>
+                <a href="https://github.com/Gsantomaggio/hokuto"  class="btn btn-info">HOKUTO</a>
+                <a href="https://github.com/Gsantomaggio/hokuto/tree/erlang-elixir_meetup/slides"  class="btn btn-info">SLIDES</a>
+                <span class="cd-date">12:00 - 12:45</span>
+              </div>
+            </div>
+            <div class="cd-timeline-block">
+              <div class="cd-timeline-img cd-lunch">
+                <img src="assets/img/lunch.svg" alt="lunch">
+              </div>
+              <div class="cd-timeline-content">
+                <h2>Lunch</h2>
+                <span class="cd-date">12:45 - 14:15</span>
+              </div>
+            </div>
+            <div class="cd-timeline-block">
+              <div class="cd-timeline-img cd-hands-on">
+                <img src="assets/img/hands-on.svg" alt="hands on">
+              </div>
+              <div class="cd-timeline-content">
+                <h2>Hands on session</h2>
+                <p>Divisione in gruppi ed esperimenti su temi proposti in giornata.<br />
+                  I più esperti faranno da tutor e gli altri saranno apprendisti stregoni.</p>
+                <p>Hai qualche idea e vuoi una mano per svilupparla? Questo è il momento buono, il pomeriggio è tuo.</p>
+                <p>Hai qualche dubbio e vuoi esercitarti sua qualcosa in particolare? Vieni e proponilo.</p>
+                <p>Vuoi semplicemente imparare un po' di Elixir/Erlang? Faremo un groppo solo per chi parte da zero.</p>
+                <p>Vuoi venire a divertirti con un gruppo di NERD, prendi il biglietto!!!</p>
+                <span class="cd-date">14:15 - 17:15</span>
+              </div>
+            </div>
+            <div class="cd-timeline-block">
+              <div class="cd-timeline-img cd-last-session">
+                <img src="assets/img/last-session.svg" alt="last-session">
+              </div>
+              <div class="cd-timeline-content">
+                <h2>Ringraziamenti e Saluti</h2>
+                <span class="cd-date">17:15 - 17:30</span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="parallax-container valign-wrapper" id="speakers">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A chi appartengono le dita dietro al codice?</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/img/background3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <!-- <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="material-icons">users</i></h3>
+          <h4>Speakers, in arrivo...</h4>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="material-icons">users</i></h3>
+          <h4>Speakers</h4>
+        </div>
+      </div>
+      <div class="row">
+        <h4 id="gpadovani">Gianluca Padovani</h4>
+        <p>
+          Ho oltre 20 anni di esperienza nello sviluppo di software in vari ambienti (embedded, industriale ed entertainment). Ho sviluppato diversi tipi di software lavorando sia da solo che in team. Dal 2005 mi sono innamorato delle metodologie agili diventando
+          addicted di TDD. Da qualche anno credo fortemente nei linguaggi funzionali in particolare in Erlang ed Elixir. Sono Founder & CTO di
+          <a href="http://coders51.com/" target="_blank">coders51</a>.
+        </p>
+        <h4 id="2">Paolo Montrasio</h4>
+        <p>
+          Ho sviluppato software fin dagli anni '80 e sono stato analista e project manager dalla metà degli anni '90 utilizzando molte tecnologie (C, Perl, HTML/CSS, Java, JavaScript, Ruby on Rails). Alterno progetti di sviluppo software con altri in cui progetto
+          applicazioni e coordino il lavoro degli sviluppatori. Sto iniziando ad usare Elixir e Phoenix. Titolare di
+          <a href="http://connettiva.eu" target="_blank">connettiva.eu</a>.
+        </p>
+        <h4 id="glana">Matteo Brancaleoni</h4>
+        <p>
+          Tutta colpa di mio padre. Che mi regalò un C64 nel lontano '89.
+          E non mi comprava i giochi. Da allora non mi sono staccato più dalla programmazione.
+          Sono professionista da 17 anni e son passato dallo sviluppo web al mondo VoIP, specializzandomi nel backend di applicazioni telefoniche.
+          Mi sono mosso fra Php, Perl, C, Python ed ora Elixir.
+          Adoro sviluppare soprattutto perchè si possono inventare cose nuove che ieri non pensavi possibili.
+        </p>
+        <h4 id="3">Gabriele Santomaggio</h4>
+        <p>
+          Ho iniziato a programmare con AMIGA 500! ah i bei vecchi tempi! Ho più di 15 anni di esperienza e la mia passione sono le middleware technologies. Attualmente lavoro da remoto per Erlang-Solutions ( London ) come RabbitMQ developer and consultant. Sono
+          contributor per RabbitMQ su github e stackoverflow supporter. Sono anche co-autore di "RabbitMQ Cookbook".
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="parallax-container valign-wrapper" id="tickets">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">Iscriviti all'evento</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/img/background2.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+          <div style="width:100%; text-align:left;">
+            <iframe src="https://eventbrite.it/tickets-external?eid=36507445753&ref=etckt&random=666777" frameborder="0" height="275" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="parallax-container valign-wrapper" id="location">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">Dove si svolgerà la giornata</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/img/background3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+          <div class="row center">
+            <p class="lead">
+              Anche questa volta, l'intera giornata sarà ospitata da <a href="https://mikamai.com">Mikamai</a> presso i propri uffici di Milano.
+            </p>
+            <div class="google-maps">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.970254586536!2d9.212965951431414!3d45.49054373960318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c691fa65942d%3A0x25e0caaa3e7e8d5a!2sMikamai!5e0!3m2!1sit!2sit!4v1500981943081" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer black" id="contacts">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Elixir &amp; Erlang Meetup</h5>
+          <p class="grey-text text-lighten-4">Per qualsiasi informazione, scrivi a <a href="mailto:info@coders51.com">info@coders51.com</a>.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Made with love by <a class="brown-text text-lighten-3" href="http://coders51.com">coders51</a> and <a class="brown-text text-lighten-3" href="https://mikamai.com">Mikamai</a>
+      </div>
+    </div>
+  </footer>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="assets/js/materialize.js"></script>
+  <script src="assets/js/init.js"></script>
+  <script src="assets/js/timeline.js"></script>
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-75938449-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+
+</html>
